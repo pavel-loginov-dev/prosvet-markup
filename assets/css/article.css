@@ -1,0 +1,320 @@
+﻿@font-face { font-family: Formular; src: url(../fonts/formular/Formular.ttf) }
+
+main {
+	width: 100%;
+}
+@media (max-width: 767px) {
+	main {
+		margin-top: -20px;
+	}
+}
+main .container {
+	width: 100%;
+	background-color: rgba(0,0,255,0.05);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+main .article__image {
+	background-color: #ffffff;
+}
+main .article__image img { 
+	max-height: 340px;
+	width: 100%;
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+	object-fit: cover;
+}
+@media (max-width: 767px) {
+	main .article__image {
+		display: none;
+	}
+}
+main .article__content {
+	max-width: 1000px;
+	margin-top: -100px;
+	background-color: white;
+	border-top-right-radius: 24px;
+	border-top-left-radius: 24px;
+	box-shadow: 0 0 7px rgba(0,0,0,0.25);
+	transition: 0.2s;
+}
+@media (max-width: 767px) {
+	main .article__content {
+		margin-top: 0px;
+	}
+}
+@media (max-width: 1000px) {
+	main .article__content {
+		border-top-right-radius: 0px;
+		border-top-left-radius: 0px;
+	}
+}
+@media (max-width: 767px) {
+	main .article__content {
+		margin-top: 50px;
+	}
+}
+.article__header {
+	height: 100px;
+	width: 1000px;
+	/* border-bottom: 1px solid rgba(140,140,140,0.5); */
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+.article__num {
+		width: 1000px;
+		text-align: center;
+		margin-top: -12px;
+		font: normal 15px/50px "Lava 3", serif;
+		color: #4c4c4c;
+		font-style: italic;
+		margin-bottom: -30px;
+}
+@media (max-width: 1000px) {
+	.article__content, .article__header, .article__num {
+		width: 100%;
+	}
+}
+@media (max-width: 767px) {
+	main .article__num {
+		margin-top: 40px;
+	}
+}
+.article__date {
+	font: bold 11px/1 "Formular";
+	color: #bfbfbf;
+    text-transform: uppercase;
+	padding-right: 10px;
+	margin-left: 28px;
+}
+.article__header ul {
+	list-style: none;
+}
+.article__header ul li {
+	display: inline-block;
+	margin-left: 10px;
+}
+.article__header li a {
+	text-decoration: none;
+	font: bold 11px/1 "Formular";
+	color: #bfbfbf;
+    text-transform: uppercase;
+}
+.article__header span {
+	width: 5px;
+	height: 5px;
+	background-color: #bfbfbf;
+	border-radius: 50%;
+}
+article {
+	max-width: 680px;
+	margin-left: 150px;
+	margin-right: 20px;
+	font: normal 20px serif, Arial, Helvetica, Geneva, sans-serif;
+}
+@media (max-width: 880px) {
+	article {
+		margin-left: 100px;
+	}
+}
+@media (max-width: 700px) {
+	article {
+		margin-left: 50px;
+		margin-right: 10px;
+	}
+}
+@media (max-width: 550px) {
+	article {
+		margin-left: 20px;
+		margin-right: 10px;
+	}
+}
+article h1 {
+	margin-top: 50px;
+	font-family: "Formular", sans-serif;
+	font-size: 50px;
+	color: #1a1a1a;
+    font-weight: 1000;
+	text-align: center;
+}
+@media (max-width: 510px) {
+	article h1 {
+		margin-top: 25px;
+		font-size: 40px;
+	}
+}
+article h2 {
+	margin-top: 40px;
+	margin-bottom: 24px;
+	font-family: "Formular", sans-serif;
+	font-size: 25px;
+	color: #1a1a1a;
+	font-weight: 1000;
+}
+.article__description {
+	margin-top: 35px;
+	/* border-bottom: 1px solid #e5e5e5; */
+    color: #262626;
+    font-size: 25px;
+    text-align: center;
+    line-height: 35px;
+    padding-bottom: 30px;
+}
+@media (max-width: 510px) {
+	.article__description {
+		font-size: 20px;
+	}
+}
+.article__author {
+	text-align: center;
+	font-size: 21px;
+	margin-top: 20px;
+}
+.article__author a {
+	text-decoration: none;
+	color: #262626;
+	border-bottom: 1px solid #262626;
+	padding-bottom: 2px;
+}
+
+article .article__social__media {
+	display: flex;
+	margin-top: 40px;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-bottom: 40px;
+}
+article .article__social__media li {
+	list-style: none;
+}
+article .article__social__media li div {
+	width: 140px; 
+	height: 40px;
+	margin-top: 3px;
+	margin-left: 3px;
+	border: 1px solid rgba(100,100,100,0.4);
+	border-radius: 3px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.3s ease 0s;
+}
+article .article__social__media li img {
+	color: #262626;
+	width: 24px;
+	height: 24px;
+}
+article .article__social__media li a:hover > div {
+	background-color: rgba(0,0,0,0.05);
+}
+
+article p {
+	color: #4c4c4c;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+article q {
+	display: block;
+	color: #4c4c4c;
+	margin-bottom: 30px;
+	quotes: none;
+	margin-left: 50px;
+}
+article .article__imagecontent {
+	margin-top: 50px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding-bottom: 10px;
+}
+article .article__imagecontent img {
+	max-width: 680px;
+}
+@media (max-width: 1000px) {
+	article .article__imagecontent img {
+		max-width: 580px;
+	}
+}
+@media (max-width: 767px) {
+	article .article__imagecontent img {
+		max-width:480px;
+	}
+}
+@media (max-width: 480px) {
+	article .article__imagecontent img {
+		max-width: 400px;
+	}
+}
+@media (max-width: 430px) {
+	article .article__imagecontent img {
+		max-width: 200px;
+	}
+}
+article .article__imagecontent figcaption {
+	margin-top: 3px;
+	font-family: serif;
+	font-size: 18px;
+	color: #505050;
+	text-align: center;
+	font-style: italic;
+}
+
+
+.article__footer {
+	padding-bottom: 40px;
+}
+
+/* ИСТОЧНИКИ ИНФОРМАЦИИ СТАЬТИ */
+.article__sources {
+	margin-top: 50px;
+	font-family: "Formular", sans-serif;
+	font-size: 16px;
+	color: #303030;
+	font-weight: normal;
+	display: flex;
+}
+.article__sources__headline {
+	margin-left: 30px;
+	padding-right: 40px;
+}
+.article__sources ul {
+	border-left: 1px solid rgba(0,0,0,0.3);
+}
+.article__sources li {
+	margin-left: 30px;
+	list-style: none;
+	padding-bottom: 10px;
+	font-weight: normal;
+}
+.article__sources li b {
+	padding-right: 5px;
+}
+.article__sources ul li a {
+	color: #303030;
+	text-decoration: none;
+	border-bottom: 1px solid rgba(0,0,0,0.0);
+	padding-bottom: 2px;
+	transition: all 0.2s ease 0s;
+}
+.article__sources ul li a:hover {
+	border-bottom: 1px solid rgba(0,0,0,0.6);
+}
+@media (max-width: 767px) {
+	.article__sources {
+		flex-direction: column;
+		align-items: center;
+	}
+	.article__sources ul {
+		border: none;
+	}
+	.article__sources__headline {
+		padding-bottom: 15px;
+	}
+	.article__sources li {
+		padding-bottom: 15px;
+	}
+}
+

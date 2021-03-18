@@ -1,0 +1,237 @@
+﻿@font-face { font-family: Formular; src: url(../fonts/formular/Formular.ttf) }
+
+/* Основные стили */
+.main {	}
+
+
+/* TOP BANNER */
+.top__banner {
+		height: 740px;
+		background-color: rgba(0,0,0,0.4);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		color: #fafafa;
+		font-family: "Formular", serif;
+		text-align: center;
+}
+.top__banner > img {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 740px;
+	object-fit: cover;
+	z-index: -1;
+}
+.top__banner .site__name {
+	margin-top: 110px;
+	font-size: 60px;
+	font-family: Times New Romance;
+	font-weight: 1000;
+}
+.top__banner .banner__box {
+	border: 4px solid #fafafa;
+	margin-top: 60px;
+	width: 90%;
+	height: 450px;
+	display: flex;
+	flex-direction: column;
+	text-decoration: none;
+	justify-content: space-between;
+	align-items: center;
+	color: #fafafa;
+}
+.top__banner .banner__tag {
+	margin-top: 25px;
+	text-transform: uppercase;
+	font-size: 11px;
+	font-weight: bold;
+}
+.top__banner .banner__num {
+	margin-top: 15px;
+	font-family: serif;
+	font-style: italic;
+	font-size: 16px;
+}
+.top__banner .banner__title {
+	margin-top: 25px;
+	font-size: 48px;
+	font-weight: bold;
+	padding: 0 50px 0 50px;
+}
+.top__banner .banner__description {
+	margin-top: 25px;
+	font-size: 16px;
+	padding: 0 50px 0 50px;
+}
+.top__banner .banner__button {
+	margin-top: 25px;
+	border: 1px solid #fafafa;
+	width: 120px;
+	height: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0,0,0,0.2);
+	transition: all 0.3s ease 0s;
+	margin-bottom: 30px;
+}
+.top__banner a:hover .banner__button {
+	background-color: rgba(255,255,255,0.1);
+}
+@media (max-width: 1200px) {
+	.top__banner .banner__title {
+		font-size: 38px;
+	}
+}
+@media (max-width: 1000px) {
+	.top__banner .banner__tag {
+		display: none;
+	}
+	.top__banner .banner__num {
+		margin-top: 35px;
+	}
+}
+@media (max-width: 850px) {
+	.top__banner .banner__description {
+		display: none;
+	}
+}
+@media (max-width: 767px) {
+	.top__banner .site__name {
+		display: none;
+	}
+	.top__banner {
+		justify-content: center;
+	}
+	.top__banner .banner__box {
+		height: 550px;
+		width: 84%;
+	}
+	.top__banner .banner__title {
+		font-size: 42px;
+	}
+}
+@media (max-width: 700px) {
+	.top__banner .banner__title {
+		font-size: 38px;
+	}
+}
+@media (max-width: 600px) {
+	.top__banner .banner__title {
+		font-size: 32px;
+	}
+}
+@media (max-width: 470px) {
+	.top__banner .banner__title {
+		font-size: 26px;
+	}
+}
+
+
+/* best SECTION */
+.best {
+	width: 100%;
+	padding-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.best header {
+	width: 90%;
+	text-align: center;
+	border-bottom: 1px solid #dfdfdf;
+}
+.best header .dot {
+	margin-bottom: 6px;
+	display: inline-block;
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	background-color: #dfdfdf;
+}
+.best header .line {
+	margin-bottom: 8px;
+	display: inline-block;
+	width: 80px;
+	height: 1px;
+	background-color: #dfdfdf;
+}
+.best header .headline {
+	display: inline-block;
+	font-family: serif;
+	font-size: 34px;
+	font-weight: bold;
+	color: #262626;
+	padding: 30px 12px;
+}
+
+/* ARTICLES SECTION */
+.articles__section {
+	margin-top: 30px;
+	max-width: 1590px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.articles__section .section__item {
+	text-decoration: none;
+	color: #262626;
+	width: 320px;
+	height: 370px;
+	margin: 15px;
+	margin-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+.articles__section .section__item > img {
+	object-fit: cover;
+	width: 250px;
+	transition: all 0.2s ease 0s;
+}
+.articles__section .item__tags {
+	margin-top: 8px;
+	font-family: "Formular", sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #9f9f9f;
+}
+.articles__section .item__tags .dot {
+	display: inline-block;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	background-color: #9f9f9f;
+	margin: 0 7px 2px 7px;
+}
+.articles__section .item__headline {
+	margin-top: 10px;
+	font-family: serif;
+	font-size: 21px;
+	font-weight: 1000;
+	padding: 0 5px 0 5px;
+	transition: all 0.2s ease 0s;
+}
+.articles__section .item__description {
+	margin-top: 8px;
+	font-family: "Formular", sans-serif;
+	font-size: 14px;
+	padding: 0 5px 0 5px;
+	color: #9f9f9f;
+}
+.section__item:hover img {
+	margin-top: -4px;
+	margin-bottom: 4px;
+}
+.section__item:hover .item__headline {
+	color: #8f8f8f;
+}
+@media (min-width: 1385px) {
+	.articles__section .section__item {
+		margin: 15px 50px 50px 50px;
+	}
+}

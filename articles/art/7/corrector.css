@@ -1,0 +1,46 @@
+﻿/* Корекция размещения даты 
+.article__date {
+	margin-left: 0px;
+} */
+
+/* Отключение описания статьи 
+.article__description {
+	display: none;
+} */
+
+/*	Если статья без фоновой картинки
+
+.header:before {
+	background-color: rgba(20,20,20);
+	box-shadow: 0 0 10px rgba(0,0,0,0);
+}
+main {
+	margin-top: 30px;
+}
+main .article__content {
+	margin-top: 0px;
+	border-top-right-radius: 0px;
+	border-top-left-radius: 0px;
+}
+.article__num {
+	margin-top: 30px;
+}
+main .article_img {
+	display: none;
+} */
+
+/* offer background */
+.article__offer {
+	background-image: url('article_images/offer.jpg');
+}
+
+/* Если прозрачное меню не смотрится
+
+main {
+	margin-top: 50px;
+}
+.header:before {
+	background-color: rgb(26,26,26);
+	box-shadow: none;
+}
+*/

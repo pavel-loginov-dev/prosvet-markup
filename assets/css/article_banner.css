@@ -1,0 +1,91 @@
+/* Предложение статьт */
+.article__offer {
+	width: 100%;
+	height: 450px;
+	background-size: cover;
+	color: #fafafa;
+	font-family: "Formular", sans-serif;
+	text-align: center;
+}
+.article__offer > a {
+	background-color: rgba(0,0,0,0.3);
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	text-decoration: none;
+	color: white;
+}
+.article__offer img {
+	display: none;
+}
+.article__offer__tag {
+	margin-top: 45px;
+	font-size: 10px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.article__offer__headline {
+	margin-top: 30px;
+	font-size: 42px;
+	font-weight: 1000;
+	padding: 0 50px 0 50px;
+}
+.article__offer__description {
+	margin-top: 40px;
+	padding: 0 50px 0 50px;
+}
+.article__offer__button {
+	width: 110px;
+	height: 40px;
+	margin-top: 30px;
+	border: 1px solid rgba(255,255,255,0.4);
+	background-color: rgba(0,0,0,0.3);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.3s ease 0s;
+}
+.article__offer a:hover .article__offer__button {
+	background-color: rgba(255,255,255,0.1);
+}
+@media (max-width: 860px) {
+	.article__offer__tag {
+		margin-top: 30px;
+	}
+	.article__offer__headline {
+		margin-top: 20px;
+		font-size: 38px;
+	}
+	.article__offer__description {
+		margin-top: 30px;
+		font-size: 14px;
+	}
+}
+@media (max-width: 767px) {
+	.article__offer__tag {
+		margin-top: 30px;
+	}
+	.article__offer__headline {
+		margin-top: 20px;
+		font-size: 32px;
+	}
+	.article__offer__description {
+		margin-top: 30px;
+		font-size: 12px;
+	}
+}
+@media (max-width: 600px) {
+	.article__offer__tag {
+		margin-top: 20px;
+	}
+	.article__offer__headline {
+		margin-top: 15px;
+		font-size: 26px;
+	}
+	.article__offer__description {
+		display: none;
+	}
+}
